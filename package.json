@@ -6,6 +6,19 @@
     "name": "liwb",
     "email": "lwbhtml@163.com"
   },
+  "files": [
+    "dist/*.js",
+    "src"
+  ],
+  "main": "dist/cloud-utils.min.js",
+  "module": "dist/cloud-utils.esm.js",
+  "browser": "dist/cloud-utils.js",
+  "keywords": [
+    "rollup",
+    "cloud-utils",
+    "utils",
+    "lib"
+  ],
   "scripts": {
     "dev": "rollup -w -c build/config.js --environment TARGET:development",
     "dev:esm": "rollup -w -c build/config.js --environment TARGET:esm",
@@ -39,19 +52,6 @@
     "rollup-plugin-replace": "^2.0.0",
     "uglify-js": "^3.0.15"
   },
-  "files": [
-    "dist/*.js",
-    "src"
-  ],
-  "main": "dist/cloud-utils.min.js",
-  "module": "dist/cloud-utils.esm.js",
-  "browser": "dist/cloud-utils.js",
-  "keywords": [
-    "rollup",
-    "cloud-utils",
-    "utils",
-    "lib"
-  ],
   "license": "MIT",
   "engines": {
     "node": ">= 6.0"
