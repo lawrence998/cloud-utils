@@ -1,9 +1,10 @@
 /*!
- * cloud-utils v1.2.1 
- * (c) 2018 liwb
- * A collection of utils
- * Released under the MIT License.
+ * cloud-utils v1.2.1 (https://github.com/cklwblove/cloud-utils)
+ * API https://github.com/yanhaijing/jslib-base/blob/master/doc/api.md
+ * Copyright 2017-2018 liwb. All Rights Reserved
+ * Licensed under MIT (https://github.com/cklwblove/cloud-utils/blob/master/LICENSE)
  */
+ 
 /**
  * 加法函数，用来得到精确的加法结果<br>
  * javascript的加法结果会有误差，在两个浮点数相加的时候会比较明显。这个函数返回较为精确的加法结果。

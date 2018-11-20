@@ -6,25 +6,16 @@ const node = require('rollup-plugin-node-resolve')
 const pack = require('../package.json')
 const version = process.env.VERSION || pack.version
 
-function toUpper(_, c) {
-  return c ? c.toUpperCase() : ''
-}
-
-const classifyRE = /(?:^|[-_/])(\w)/g
-
-function classify(str) {
-  return str.replace(classifyRE, toUpper)
-}
-
-const moduleName = classify(pack.name)
+const moduleName = pack.name
 
 const banner =
-  '/*!\n' +
-  ` * ${pack.name} v${version} \n` +
-  ` * (c) ${new Date().getFullYear()} ${pack.author.name}\n` +
-  ` * ${pack.description}\n` +
-  ` * Released under the ${pack.license} License.\n` +
-  ' */';
+  `/*!
+ * ${pack.name} v${version} (https://github.com/cklwblove/cloud-utils)
+ * API https://cklwblove.github.io/cloud-utils/
+ * Copyright 2017-${(new Date).getFullYear()} ${pack.author.name}. All Rights Reserved
+ * Licensed under ${pack.license} (https://github.com/cklwblove/cloud-utils/blob/master/LICENSE)
+ */
+ `
 
 const resolve = (p) => {
   return path.resolve(__dirname, '../', p)

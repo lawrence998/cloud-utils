@@ -1,9 +1,10 @@
 /*!
- * cloud-utils v1.2.1 
- * (c) 2018 liwb
- * A collection of utils
- * Released under the MIT License.
+ * cloud-utils v1.2.1 (https://github.com/cklwblove/cloud-utils)
+ * API https://github.com/yanhaijing/jslib-base/blob/master/doc/api.md
+ * Copyright 2017-2018 liwb. All Rights Reserved
+ * Licensed under MIT (https://github.com/cklwblove/cloud-utils/blob/master/LICENSE)
  */
+ 
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
