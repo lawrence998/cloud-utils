@@ -1,9 +1,10 @@
+
 /**
  * 为数字加上单位：万或亿
  *
  * @param {number} number 输入数字.
- * @param {number} decimalDigit 小数点后最多位数，默认为2
- * @return {*} 加上单位后的数字
+ * @param {number} decimalDigit 返回的小数点后最多的位数，默认为 2
+ * @return {*} 加上单位后的数字（计算结果有时会有精度问题）
  * @example
  *
  * addChineseUnit(1000.01)
@@ -31,7 +32,7 @@
  * // => 4.44亿
  *
  * addChineseUnit(400000000000000000000000)
- * // => 4000万亿亿
+ * // => 3999.99万亿亿
  *
  * addChineseUnit(4000000000000000000000000)
  * // => 4亿亿亿
