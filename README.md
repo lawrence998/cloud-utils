@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/cklwblove/cloud-utils.svg?branch=master)](https://travis-ci.org/cklwblove/cloud-utils)
 [![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/@liwb/cloud-utils)
 [![NPM downloads](http://img.shields.io/npm/dm/cloud-utils.svg?style=flat-square)](http://www.npmtrends.com/@liwb/cloud-utils)
+[![Coverage Status](https://coveralls.io/repos/github/cklwblove/cloud-utils/badge.svg)](https://coveralls.io/github/cklwblove/cloud-utils)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/cklwblove/cloud-utils.svg)](http://isitmaintained.com/project/cklwblove/cloud-utils "Percentage of issues still open")
 
 常用的 Javascript 工具类方法集合
