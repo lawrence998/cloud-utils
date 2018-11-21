@@ -1,30 +1,97 @@
-# cloud-utils 
-[![Build Status](https://travis-ci.org/cklwblove/cloud-utils.svg)](https://travis-ci.org/cloud-templates/cloud-utils)
-常用的工具方法
+# [cloud-utils](https://github.com/cklwblove/cloud-utils)
+[![](https://img.shields.io/badge/Powered%20by-cloud--utils-brightgreen.svg)](https://github.com/cklwblove/cloud-utils)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yanhaijing/jslib-base/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/cklwblove/cloud-utils.svg?branch=master)](https://travis-ci.org/cklwblove/cloud-utils)
+[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/@liwb/cloud-utils)
+[![NPM downloads](http://img.shields.io/npm/dm/cloud-utils.svg?style=flat-square)](http://www.npmtrends.com/@liwb/cloud-utils)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/cklwblove/cloud-utils.svg)](http://isitmaintained.com/project/cklwblove/cloud-utils "Percentage of issues still open")
 
-## 开始
+常用的 Javascript 工具类方法集合
 
-克隆本项目并且安装依赖
+## 目录介绍
 
-```bash
-git clone git@github.com:cloud-templates/cloud-utils.git
-cd cloud-utils
-npm install or yarn
+```
+.
+├── example 使用example
+├── dist 编译产出代码
+├── docs 项目文档
+├── src 源代码目录
+├── test 单元测试
+├── CHANGELOG.md 变更日志
 ```
 
-`npm run build` builds the library to `dist`, generating three files:
+## 如何使用
+通过 npm 下载安装代码
 
-* `dist/cloud-utils.common.js`
-    A CommonJS bundle, suitable for use in Node.js, that `require`s the external dependency. This corresponds to the `"main"` field in package.json
-* `dist/cloud-utils.esm.js`
-    an ES module bundle, suitable for use in other people's libraries and applications, that `import`s the external dependency. This corresponds to the `"module"` field in package.json
-* `dist/cloud-utils.js or cloud-utils.min.js`
-    a UMD build, suitable for use in any environment (including the browser, as a `<script>` tag), that includes the external dependency. This corresponds to the `"browser"` field in package.json
+```bash
+$ npm install --save @liwb/cloud-utils
+```
 
-`npm run dev` builds the library(`dist/cloud-utils.js`), then keeps rebuilding it whenever the source files change using [rollup-watch](https://github.com/rollup/rollup-watch).
+如果你是 node 环境
 
-## License
+```js
+var { formatDate } = require('@liwb/cloud-utils.common');
+```
 
-[MIT](LICENSE).
+如果你是 webpack 等环境
 
+```js
+import { formatDate } from '@liwb/cloud-utils.esm';
+```
 
+如果你是 requirejs 环境
+
+```js
+requirejs(['node_modules/@liwb/cloud-utils/dist/cloud-utils.js'], function (utils) {
+    var formatDate = utils.formatDate;
+})
+```
+
+如果你是浏览器环境
+
+```html
+<script src="node_modules/@liwb/cloud-utils/dist/cloud-utils.min.js"></script>
+
+<script>
+    var utils = window['cloud-utils'];
+</script>
+```
+
+## 文档
+[API](https://cklwblove.github.io/cloud-utils/)
+
+## 贡献指南
+首次运行需要先安装依赖
+
+```bash
+$ npm install
+```
+开发调试（利用 [rollup-watch](https://github.com/rollup/rollup-watch) ，自动监测源码变更，生成 `dist/cloud-utils.js`）
+
+```bash
+$ npm run dev
+```
+
+一键打包生成生产代码
+
+```bash
+$ npm run build
+```
+
+运行单元测试，浏览器环境需要手动测试，位于`test/browser`
+
+```bash
+$ npm test
+```
+
+修改package.json中的版本号，修改README.md中的版本号，修改CHANGELOG.md，然后发布新版
+
+```bash
+$ npm run release
+```
+
+将新版本发布到npm
+
+```bash
+$ npm publish --access=public
+```

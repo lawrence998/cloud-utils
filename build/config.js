@@ -6,11 +6,11 @@ const node = require('rollup-plugin-node-resolve')
 const pack = require('../package.json')
 const version = process.env.VERSION || pack.version
 
-const moduleName = pack.name
+const moduleName = 'cloud-utils';
 
 const banner =
   `/*!
- * ${pack.name} v${version} (https://github.com/cklwblove/cloud-utils)
+ * ${moduleName} v${version} (https://github.com/cklwblove/cloud-utils)
  * API https://cklwblove.github.io/cloud-utils/
  * Copyright 2017-${(new Date).getFullYear()} ${pack.author.name}. All Rights Reserved
  * Licensed under ${pack.license} (https://github.com/cklwblove/cloud-utils/blob/master/LICENSE)
@@ -25,7 +25,7 @@ const builds = {
   // Runtime only (CommonJS). Used by bundlers e.g. Webpack & Browserify
   commonjs: {
     entry: resolve('src/main.js'),
-    dest: resolve(`dist/${pack.name}.common.js`),
+    dest: resolve(`dist/${moduleName}.common.js`),
     format: 'cjs',
     banner
   },
@@ -33,14 +33,14 @@ const builds = {
   // e.g. Rollup & Webpack 2
   esm: {
     entry: resolve('src/main.js'),
-    dest: resolve(`dist/${pack.name}.esm.js`),
+    dest: resolve(`dist/${moduleName}.esm.js`),
     format: 'es',
     banner
   },
   // runtime-only production build (Browser)
   production: {
     entry: resolve('src/main.js'),
-    dest: resolve(`dist/${pack.name}.min.js`),
+    dest: resolve(`dist/${moduleName}.min.js`),
     format: 'umd',
     env: 'production',
     moduleName,
@@ -49,7 +49,7 @@ const builds = {
   // runtime-only build (Browser)
   development: {
     entry: resolve('src/main.js'),
-    dest: resolve(`dist/${pack.name}.js`),
+    dest: resolve(`dist/${moduleName}.js`),
     format: 'umd',
     env: 'development',
     moduleName,

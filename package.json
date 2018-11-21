@@ -1,5 +1,5 @@
 {
-  "name": "cloud-utils",
+  "name": "@liwb/cloud-utils",
   "description": "A collection of utils",
   "version": "1.2.1",
   "author": {
@@ -29,20 +29,23 @@
     "lint": "eslint --fix .js src",
     "test": "npm run lint && npm run build && mocha",
     "test:unit": "mocha",
+    "coverall": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "gen:docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
     "docs:deploy": "sh ./deploy-docs.sh",
-    "deploy": "sh build/release.sh"
+    "release": "sh build/release.sh"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-env": "1.6.1",
     "buble": "^0.16.0",
+    "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "docdash": "^0.4.0",
     "es5-shim": "^4.5.12",
     "eslint": "^3.14.1",
     "expect.js": "^0.3.1",
+    "istanbul": "^0.4.5",
     "jsdoc": "^3.5.4",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.2",
@@ -57,6 +60,9 @@
     "babel-runtime": "6.26.0"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">= 6.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cklwblove/cloud-utils.git"
