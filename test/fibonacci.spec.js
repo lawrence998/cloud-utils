@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {fibonacci} = require('../dist/cloud-utils');
 
 describe('#fibonacci() 斐波那契数组生成器', function () {

@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {accMul} = require('../dist/cloud-utils');
 
 describe('#accMul() 乘法函数，用来得到精确的乘法结果', function () {

@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {addClass} = require('../dist/cloud-utils');
 
 describe('#addClass() 为元素添加某个 class', function () {

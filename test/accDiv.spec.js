@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {accDiv} = require('../dist/cloud-utils');
 
 describe('#accDiv() 除法函数，用来得到精确的除法结果', function () {

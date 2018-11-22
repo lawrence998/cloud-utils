@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {appendStockSuffix} = require('../dist/cloud-utils');
 
 describe('#appendStockSuffix() 识别股票代码添加市场后缀', function () {

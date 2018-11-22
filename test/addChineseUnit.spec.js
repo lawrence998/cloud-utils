@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {addChineseUnit} = require('../dist/cloud-utils');
 
 describe('#addChineseUnit() 为数字加上单位：万或亿', function () {

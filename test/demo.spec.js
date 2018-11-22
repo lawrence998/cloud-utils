@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 
 // 金丝雀测试
 describe('util tests', function () {

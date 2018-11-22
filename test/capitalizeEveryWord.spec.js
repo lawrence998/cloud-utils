@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {capitalizeEveryWord} = require('../dist/cloud-utils');
 
 describe('#capitalizeEveryWord() 将每个单词的首字母进行大写转换', function () {

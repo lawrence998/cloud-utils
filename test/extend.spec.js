@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {extend} = require('../dist/cloud-utils');
 
 describe('#extend() 将from所有的键值对都添加到to上面去，返回to', function () {

@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {bytesToSize} = require('../dist/cloud-utils');
 
 describe('#bytesToSize() 将字节转换成友好格式，如Bytes，KB，MB', function () {

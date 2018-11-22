@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {accAdd} = require('../dist/cloud-utils');
 
 describe('#accAdd() 加法函数，用来得到精确的加法结果', function () {

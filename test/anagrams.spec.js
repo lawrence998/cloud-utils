@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {anagrams} = require('../dist/cloud-utils');
 
 describe('#anagrams() 创建字谜', function () {

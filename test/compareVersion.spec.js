@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {compareVersion} = require('../dist/cloud-utils');
 
 describe('#compareVersion() 版本比较', function () {

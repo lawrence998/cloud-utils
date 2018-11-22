@@ -1,4 +1,4 @@
-var expect = require('expect.js');
+var {expect} = require('chai');
 var {encrypt} = require('../dist/cloud-utils');
 
 describe('#encrypt() 加密算法', function () {
