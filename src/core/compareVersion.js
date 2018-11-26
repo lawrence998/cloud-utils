@@ -16,7 +16,8 @@ function compareVersion(oldVersion, newVersion, containEqual) {
   // 分割字符串为['1', '0', '1']格式
   var oldArray = oldVersion.split('.');
   var newArray = newVersion.split('.');
-  var o, n;
+  var o;
+  var n;
   // 从左向右对比值，值相同则跳过，不同则返回不同的值
   while (o === n && newArray.length > 0) {
     o = oldArray.shift();

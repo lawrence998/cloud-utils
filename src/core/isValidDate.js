@@ -1,5 +1,5 @@
 /**
- * 是否为有效的日期，格式为yyyy-mm-dd
+ * 是否为有效的日期格式，格式为 yyyy-mm-dd
  *
  * @param {string} val
  * @returns {boolean}

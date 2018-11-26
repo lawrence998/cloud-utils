@@ -1,5 +1,5 @@
 /**
- * 是否为有效的url<br>
+ * 是否为有效的 url<br>
  *
  * 支持类型:<br>
  * http(s)://(username:password@)(www.)domain.(com/co.uk)(/...)<br>

@@ -1,5 +1,5 @@
 /**
- * 是否为有效的qq
+ * 是否为有效的 qq
  *
  * @param {string} val
  * @returns {boolean}
