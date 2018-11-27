@@ -8,6 +8,7 @@
  * getPixelRatio();
  * // => 2
  */
+/* istanbul ignore next */
 function getPixelRatio() {
   var ctx = document.createElement('canvas').getContext('2d');
   var dpr = window.devicePixelRatio || 1;

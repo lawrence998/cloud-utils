@@ -1,5 +1,5 @@
 /**
- * dom操作，元素是包含某个class
+ * Dom 操作，元素是包含某个 class
  *
  * @since 1.1.5
  * @param el HTML元素
@@ -11,6 +11,7 @@
  * hasClass(document.querySelector('.box'), 'flex');
  * // => true
  */
+/* istanbul ignore next */
 function hasClass(el, cls) {
   if (!el || !cls) return false;
   if (cls.indexOf(' ') !== -1) throw new Error('className should not contain space.');
