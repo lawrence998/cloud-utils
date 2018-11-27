@@ -7,6 +7,7 @@
  * getBrowser();
  * // => {type: "chrome", version: "60.0.3112.101"}
  */
+/* istanbul ignore next */
 function getBrowser() {
   var ua = navigator.userAgent.toLowerCase();
   var type = 'UNKNOW';
