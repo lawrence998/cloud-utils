@@ -26,13 +26,24 @@
     "dev:prod": "rollup -w -c build/config.js --environment TARGET:production",
     "dev:cjs": "rollup -w -c build/config.js --environment TARGET:commonjs",
     "build": "node build/build.js",
-    "lint": "eslint --fix .js src",
+    "lint": "eslint -c .eslintrc.js src/core/**.js",
     "test": "npm run lint && npm run build && mocha",
     "test:unit": "mocha",
     "coverall": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "gen:docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
     "docs:deploy": "sh ./deploy-docs.sh",
     "release": "sh build/release.sh"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -45,8 +56,10 @@
     "docdash": "^0.4.0",
     "es5-shim": "^4.5.12",
     "eslint": "^3.14.1",
+    "husky": "^1.1.4",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.5.4",
+    "lint-staged": "^8.0.4",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.57.1",
