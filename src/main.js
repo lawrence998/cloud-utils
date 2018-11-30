@@ -67,5 +67,6 @@ export {default as getDays} from './core/getDays';
 export {default as getDayOfYear} from './core/getDayOfYear';
 export {default as getDayOfYearWeek} from './core/getDayOfYearWeek';
 export {default as getYearOfDay} from './core/getYearOfDay';
+export {default as photoCompress} from './core/photoCompress';
 export {default as changeMoneyToChinese} from './core/changeMoneyToChinese';
 export {default as numberToChinese} from './core/numberToChinese';
