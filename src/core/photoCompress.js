@@ -1,18 +1,18 @@
 /**
  * 图片压缩
- * @param  {[type]}   file [压缩文件]
- * @param  {[type]}   obj  [压缩参数]
- * obj = {
-          width: 图片宽,
-          height: 图片高,
-          quality: 图像质量，
-          blob: 是否转换成Blob
-      }
- * @param  {Function} cb   [回调函数]
- * @return {[type]}        [返回压缩前和压缩后的格式]
+ * @param  {string}   file [压缩文件]
+ * @param  {object}   obj [压缩参数]
+ * @param  {function} cb   [回调函数]
+ * @return {string}        [返回压缩前和压缩后的格式]
  */
 /* istanbul ignore next */
 function photoCompress(file, obj, cb) {
+// obj = {
+//    width: 图片宽,
+//    height: 图片高,
+//    quality: 图像质量，
+//    blob: 是否转换成Blob
+//  }
   // 将以base64的图片url数据转换为Blob
   function convertBase64UrlToBlob(urlData) {
     var arr = urlData.split(',');
@@ -42,9 +42,9 @@ function photoCompress(file, obj, cb) {
       var canvas = document.createElement('canvas');
       var ctx = canvas.getContext('2d');
       // 创建属性节点
-      var anw = document.createAttribute("width");
+      var anw = document.createAttribute('width');
       anw.nodeValue = w;
-      var anh = document.createAttribute("height");
+      var anh = document.createAttribute('height');
       anh.nodeValue = h;
       canvas.setAttributeNode(anw);
       canvas.setAttributeNode(anh);
