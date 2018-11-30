@@ -1385,6 +1385,22 @@ docdash@^0.4.0:
   resolved "https://registry.npmjs.org/docdash/-/docdash-0.4.0.tgz#05c3a50d83189981699ee0c076d3a3950db7ec00"
   integrity sha1-BcOlDYMYmYFpnuDAdtOjlQ237AA=
 
+docdown@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.npmjs.org/docdown/-/docdown-0.7.3.tgz#c90328629e6634e1233286e78406c47b4cf25ea8"
+  integrity sha512-vTNESaOY7exNoee4kT4WHGoVvEJi21ykOXLOVjGwlIgCLsER9owtc0qMU6yfOkrHtjmapsqb3ZnI6+FJz5aRRw==
+  dependencies:
+    doctrine "2.0.0"
+    lodash "^4.17.5"
+
+doctrine@2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npmjs.org/doctrine/-/doctrine-2.0.0.tgz#c73d8d2909d22291e1a007a395804da8b665fe63"
+  integrity sha1-xz2NKQnSIpHhoAejlYBNqLZl/mM=
+  dependencies:
+    esutils "^2.0.2"
+    isarray "^1.0.0"
+
 doctrine@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
@@ -2413,7 +2429,7 @@ is-windows@^1.0.0, is-windows@^1.0.2:
   resolved "https://registry.npmjs.org/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
   integrity sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==
 
-isarray@1.0.0, isarray@~1.0.0:
+isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
