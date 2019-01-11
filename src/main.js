@@ -70,3 +70,4 @@ export {default as getYearOfDay} from './core/getYearOfDay';
 export {default as photoCompress} from './core/photoCompress';
 export {default as changeMoneyToChinese} from './core/changeMoneyToChinese';
 export {default as numberToChinese} from './core/numberToChinese';
+export {default as toNonExponential} from './core/toNonExponential';

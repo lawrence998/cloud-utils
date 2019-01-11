@@ -1,19 +1,24 @@
 {
   "name": "@liwb/cloud-utils",
   "description": "A collection of utils",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "author": {
     "name": "liwb",
     "email": "lwbhtml@163.com"
   },
-  "files": [
-    "dist/*.js",
-    "src"
-  ],
   "main": "dist/cloud-utils.min.js",
   "module": "dist/cloud-utils.esm.js",
   "jsnext:main": "dist/cloud-utils.esm.js",
   "browser": "dist/cloud-utils.js",
+  "unpkg": "dist/cloud-utils.min.js",
+  "jsdelivr": "dist/cloud-utils.min.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "src",
+    "types/*.d.ts"
+  ],
+  "sideEffects": false,
   "keywords": [
     "rollup",
     "cloud-utils",
@@ -67,6 +72,10 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^2.0.0",
+    "ts-node": "7.0.1",
+    "tslib": "1.9.3",
+    "tslint": "5.11.0",
+    "typescript": "3.1.6",
     "uglify-js": "^3.0.15"
   },
   "dependencies": {
