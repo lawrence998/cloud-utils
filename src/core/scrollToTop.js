@@ -8,7 +8,6 @@
  *
  * scrollToTop();
  */
-/* istanbul ignore next */
 function scrollToTop() {
   const c = document.documentElement.scrollTop || document.body.scrollTop;
 

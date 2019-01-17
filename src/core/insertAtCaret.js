@@ -13,7 +13,6 @@
  * insertText(editText, 'hello world');
  * // =>
  */
-/* istanbul ignore next */
 function insertAtCaret(dom, str = '') {
   if (document.selection) { // IE
     var sel = document.selection.createRange();

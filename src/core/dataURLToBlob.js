@@ -10,7 +10,6 @@
  * dataURLToBlob(URI);
  * // => Blob {size: 248, type: "image/svg+xml"}
  */
-/* istanbul ignore next */
 function dataURLToBlob(dataURL) {
   var BASE64_MARKER = ';base64,';
   var parts;

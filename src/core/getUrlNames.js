@@ -12,7 +12,6 @@ import isEmptyObject from './isEmptyObject';
  * getUrlNames('state');
  * // => {broker: "aaaa1111ccc", tenant: "asdfasdf", view_tag: "2"}
  */
-/* istanbul ignore next */
 function getUrlNames(name) {
   var urlParam = getLocationHrefParam(name);
   var o = {};

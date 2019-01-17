@@ -9,7 +9,6 @@
  * timeTaken(() => Math.pow(2, 10));
  * // => 1024
  */
-/* istanbul ignore next */
 function timeTaken(callback) {
   if (typeof callback !== 'function') throw new Error('callback 必须为可执行的函数');
   console.time('timeTaken');

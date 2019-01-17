@@ -10,7 +10,6 @@
  * getLocationSearchParam('a');
  * // => 1
  */
-/* istanbul ignore next */
 function getLocationSearchParam(name) {
   // 构造一个含有目标参数的正则表达式对象
   var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');

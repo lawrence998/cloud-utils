@@ -10,7 +10,6 @@
  * getLocationHrefParam('a');
  * // => 1
  */
-/* istanbul ignore next */
 function getLocationHrefParam(name) {
   // 构造一个含有目标参数的正则表达式对象
   var r = new RegExp('(\\?|#|&)' + name + '=([^&#]*)(&|#|$)');

@@ -9,7 +9,6 @@
  * getDayOfYear('2014-01-10')
  * => 10
  */
-/* istanbul ignore next */
 function getDayOfYear(time) {
   var firstDayYear = getFirstDayOfYear(time);
   var numSecond = (new Date(time).getTime() - new Date(firstDayYear).getTime()) / 1000;

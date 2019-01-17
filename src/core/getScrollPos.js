@@ -10,7 +10,6 @@
  * getScrollPos();
  * // => {x: 0, y: 200}
  */
-/* istanbul ignore next */
 function getScrollPos(el = window) {
   return ({
     x: (el.pageXOffset !== undefined) ? el.pageXOffset : el.scrollLeft,
