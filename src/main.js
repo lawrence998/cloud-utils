@@ -77,3 +77,4 @@ export {default as mapValues} from './core/mapValues';
 export {default as mapKeys} from './core/mapKeys';
 export {default as invertKeyValues} from './core/invertKeyValues';
 export {default as size} from './core/size';
+export {default as trim} from './core/trim';

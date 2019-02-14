@@ -12,7 +12,7 @@
  * // => 6225 3652 7156 2822
  */
 function formatBankCard(val) {
-  if (typeof val !== 'string') throw new Error('val');
+  if (typeof val !== 'string') throw new Error('输入值必须为字符串');
 
   var len = val.length;
   var reg = /(\d{4})(?=\d)/g;
