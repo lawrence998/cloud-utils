@@ -15,7 +15,6 @@ const trim = function(string) {
  * removeClass(document.querySelector('.box'), 'flex');
  * // => <div class="box"></div>
  */
-/* istanbul ignore next */
 function removeClass(el, cls) {
   if (!el || !cls) return;
   var classes = cls.split(' ');

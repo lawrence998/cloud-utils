@@ -83,3 +83,4 @@ export {default as deepClone} from './core/deepClone';
 export {default as deepMapKeys} from './core/deepMapKeys';
 export {default as get} from './core/get';
 export {default as dig} from './core/dig';
+export {default as isEmpty} from './core/isEmpty';
