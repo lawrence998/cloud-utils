@@ -18,7 +18,7 @@
     }
   }
 };
- 
+
  const upperKeysObj = deepMapKeys(obj, key => key.toUpperCase());
 
  // =>

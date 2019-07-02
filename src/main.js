@@ -81,3 +81,5 @@ export {default as trim} from './core/trim';
 export {default as tozhCN} from './core/tozhCN';
 export {default as deepClone} from './core/deepClone';
 export {default as deepMapKeys} from './core/deepMapKeys';
+export {default as get} from './core/get';
+export {default as dig} from './core/dig';
