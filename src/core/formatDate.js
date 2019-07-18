@@ -23,7 +23,6 @@
  * formatDate(Date.now(), 'yyyy-M-d h:m:s.S')
  * // => 2006-7-2 8:9:4.18
  */
-/* istanbul ignore next */
 function formatDate(date = new Date(), fmt = 'yyyy-MM-dd HH:mm:ss') {
   date = (typeof date === 'number' || typeof date === 'string') ? new Date(date) : date;
 
