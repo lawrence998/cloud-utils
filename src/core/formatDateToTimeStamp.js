@@ -20,7 +20,6 @@
  * formatDateToTimeStamp('2016-01-26 12:00:00.0');
  * // => 1453780800000
  */
-/* istanbul ignore next */
 function formatDateToTimeStamp(time) {
   if (typeof time !== 'string') throw new TypeError('数据类型必须是 string');
 
