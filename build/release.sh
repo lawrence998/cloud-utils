@@ -25,5 +25,6 @@ then
   git rebase master
   git push origin dev
 
+  npm config set registry=https://registry.npmjs.org/
   npm publish --access=public
 fi
