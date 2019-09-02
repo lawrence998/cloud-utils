@@ -86,3 +86,5 @@ export {default as dig} from './core/dig';
 export {default as isEmpty} from './core/isEmpty';
 export {default as merge} from './core/merge';
 export {default as only} from './core/only';
+export {default as isLightOS} from './core/isLightOS';
+export {default as nativeJSBridge} from './core/nativeJSBridge';
