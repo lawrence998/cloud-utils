@@ -11,9 +11,6 @@ import isLightOS from './isLightOS';
  * 在线的情况下，H5应用是运行在 tzyj 的webview里，目前 navigator.userAgent 并没有 lightos，所以只能用tzyj自身注入的对象 window.winner<br>
  * 离线包情况下，H5应用是运行在 light 的容器里。因此就可以利用 light 本身提供的SDK，即使 tzyj 自身封装扩展的方法，如获取自选股等，是基于 light 的容器，也需要改造
  *
- *
- *
- *
  */
 function nativeJSBridge({method = '', params = null, cb = null}) {
   if (isLightOS()) {
