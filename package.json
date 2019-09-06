@@ -12,9 +12,11 @@
   "browser": "dist/cloud-utils.js",
   "unpkg": "dist/cloud-utils.min.js",
   "jsdelivr": "dist/cloud-utils.min.js",
+  "types": "index.d.ts",
   "files": [
     "dist/*.js",
-    "src"
+    "src",
+    "index.d.ts"
   ],
   "sideEffects": false,
   "keywords": [
