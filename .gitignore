@@ -1,7 +1,5 @@
 lib
 coverage
-!index.d.ts
-*.d.ts
 dist/*.gz
 dist/*.map
 node_modules
