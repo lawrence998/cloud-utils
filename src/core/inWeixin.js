@@ -4,7 +4,7 @@
  * @returns {boolean}
  * @example
  *
- * inAlipay();
+ * inWeixin();
  * // => false
  */
 function inWeixin() {

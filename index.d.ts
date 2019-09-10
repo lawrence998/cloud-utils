@@ -678,14 +678,131 @@ export declare function getURLParameters(url: string): any;
  */
 export declare function getYearOfDay(time: string): number;
 
+/**
+ * Dom 操作，元素是包含某个 class
+ *
+ * @since 1.1.5
+ * @param el HTML元素
+ * @param cls css类名
+ * @returns {boolean}
+ * @example
+ *
+ * <div class="box flex"></div>
+ * hasClass(document.querySelector('.box'), 'flex');
+ * // => true
+ */
+export declare function hasClass(el: HTMLElement, cls: string): boolean;
 
+/**
+ * Hex 转换为 Rgb
+ *
+ * @since 1.2.0
+ * @param hex
+ * @returns {*}
+ * @example
+ *
+ * hexToRgb("#0033ff").g;
+ * // => 51
+ */
+export declare function hexToRgb(hex: string): any;
 
+/**
+ * html字符解码
+ *
+ * @param {string} str
+ * @returns {string}
+ * @example
+ *
+ * htmlDecode('&lt;script&gt;');
+ * // => <script>
+ */
+export declare function htmlDecode(str: string): string;
 
+/**
+ * html字符编码
+ *
+ * @param {string} str
+ * @returns {string}
+ * @example
+ *
+ * htmlEncode('<script>');
+ * // => &lt;script&gt;
+ */
+export declare function htmlEncode(str: string): string;
 
+/**
+ * 是否是支付宝内核
+ *
+ * @returns {boolean}
+ * @example
+ *
+ * inAlipay();
+ * // => false
+ */
+export declare function inAlipay(): boolean;
 
+/**
+ * 将文本插入到文本区域的光标位置<br>
+ * _应用场景：_如在评论框里，在光标位置里插入emoji等
+ *
+ * @param {object} dom对象
+ * @param {string} str
+ * @example
+ *
+ * <textarea name="textarea" rows="10" cols="50">你好世界~</textarea>
+ *
+ * const editText = document.querySelector('#editText');
+ *
+ * insertText(editText, 'hello world');
+ * // =>
+ */
+export declare function insertAtCaret(dom: any, str: string): void;
 
+/**
+ * 反转对象的键值对
+ * 而不会改变它。使用 Object.keys() 和 Array.reduce() 来反转对象的键值对。
+ *
+ * @param obj
+ * @returns {{}}
+ * @example
+ *
+ * invertKeyValues({ name: 'John', age: 20 });
+ * // => { 20: 'age', John: 'name' }
+ */
+export declare function invertKeyValues(obj: object): object;
 
+/**
+ * 是否是微信内核
+ *
+ * @returns {boolean}
+ * @example
+ *
+ * inWeixin();
+ * // => false
+ */
+export declare function inWeixin(): boolean;
 
+/**
+ * 是否为有效的身份证号
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isCardId('411423198807127834');
+ * // => true
+ */
+export declare function isCardId(val: string): boolean;
 
-
-
+/**
+ * 是否为中文
+ *
+ * @since 1.2.4
+ * @param val
+ * @returns {boolean}
+ * @example
+ *
+ * isChinese('中文');
+ * // => true
+ */
+export declare function isChinese(val: string): boolean;
