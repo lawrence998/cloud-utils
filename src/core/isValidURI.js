@@ -10,7 +10,7 @@
  * telnet://<user>:<password>@<host>[:<port>/]<br>
  * smb://[<user>@]<host>[:<port>][/[<path>]][?<param1>=<value1>[;<param2>=<value2>]]<br>
  *
- * @param {string} val
+ * @param {string} url
  * @returns {*}
  * @example
  *

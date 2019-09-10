@@ -806,3 +806,216 @@ export declare function isCardId(val: string): boolean;
  * // => true
  */
 export declare function isChinese(val: string): boolean;
+
+/**
+ * 是否为数字
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isDigit('abc');
+ * // => false
+ */
+export declare function isDigit(val: string): boolean;
+
+/**
+ * 是否为空
+ * 如果a值是空对象，集合，没有可枚举属性或任何不被视为集合的类型，则返回true。
+ *
+ * {@link https://30secondsofcode.org/type#isempty}
+ * @param val
+ * @returns {boolean}
+ * @example
+ *
+ * isEmpty([]);
+ * // => true
+ * isEmpty({});
+ * // => true
+ * isEmpty('');
+ * // => true
+ * isEmpty([1, 2]);
+ * // => false
+ * isEmpty({ a: 1, b: 2 });
+ * // => false
+ * isEmpty('text');
+ * // => false
+ * isEmpty(123);
+ * // => true - type is not considered a collection
+ * isEmpty(true);
+ * // => true - type is not considered a collection
+ */
+export declare function isEmpty(val: any): boolean;
+
+/**
+ * 是否为空对象
+ *
+ * @param val
+ * @returns {boolean}
+ * @example
+ *
+ * isEmptyObject({});
+ * // => true
+ */
+export declare function isEmptyObject(val: any): boolean;
+
+/**
+ * 是否为 HTML 标签
+ *
+ * @since 1.2.4
+ * @param {string} str
+ * @returns {boolean}
+ * @example
+ *
+ * isHTML('<p>123</p>');
+ * // => true
+ */
+export declare function isHTML(str: string): boolean;
+
+/**
+ * 是否为闰年
+ *
+ * @param {number} val
+ * @returns {boolean}
+ * @example
+ *
+ * isLeapYear(2000);
+ * // => true
+ */
+export declare function isLeapYear(val: number): boolean;
+
+/**
+ * 是否为字母
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isLetters('1234');
+ * // => false
+ */
+export declare function isLetters(val: string): boolean;
+
+/**
+ * 是否为有效的车牌号码
+ *
+ * 1.常规车牌号：仅允许以汉字开头，后面可录入六个字符，由大写英文字母和阿拉伯数字组成。如：粤B12345；<br>
+ * 2.武警车牌：允许前两位为大写英文字母，后面可录入七个字符，由大写英文字母和阿拉伯数字组成，其中第三位可录汉字也可录大写英文字母及阿拉伯数字，如：WJ01警0081、WJ0112345。<br>
+ * 3.最后一个为汉字的车牌：允许以汉字开头，后面可录入六个字符，前五位字符，由大写英文字母和阿拉伯数字组成，而最后一个字符为汉字，汉字包括“挂”、“学”、“警”、“军”、“港”、“澳”。<br>如：粤Z1234港。
+ * 4.新军车牌：以两位为大写英文字母开头，后面以5位阿拉伯数字组成。如：BA12345。<br>
+ * 5.黑龙江车牌存在08或38开头的情况。<br>
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isLicenseNo('浙A12345');
+ * // => true
+ */
+export declare function isLicenseNo(val: string): boolean;
+
+/**
+ * 是否为 Light OS(容器)
+ *
+ * @example
+ *
+ * isLightOS();
+ * // => true
+ */
+export declare function isLightOS(): boolean;
+
+/**
+ * 是否为有效的手机号
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isMobile('15898745678');
+ * // => true
+ */
+export declare function isMobile(val: string): boolean;
+
+/**
+ * 是否为有效的日期格式<br>
+ * 格式为 yyyy-mm-dd 或 yyyy-mm-dd HH:mm:ss
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidDate('2015-01-20');
+ * // => true
+ */
+export declare function isValidDate(val: string): boolean;
+
+/**
+ * 是否为有效的邮箱地址<br>
+ * 名称允许汉字、字母、数字，域名只允许英文域名<br>
+ * 中文如：杨元庆001Abc@lenovo.com.cn
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidEmail('123456@qq.com');
+ * // => true
+ */
+export declare function isValidEmail(val: string): boolean;
+
+/**
+ * 是否为有效的密码(6-16位字母加数字组合，不能包含空格)
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidPassword('a23456abc');
+ * // => true
+ */
+export declare function isValidPassword(val: string): boolean;
+
+/**
+ * 是否为有效的 qq
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidQQ('814563410');
+ * // => true
+ */
+export declare function isValidQQ(val: string): boolean;
+
+/**
+ * 是否为有效的 url<br>
+ *
+ * 支持类型:<br>
+ * http(s)://(username:password@)(www.)domain.(com/co.uk)(/...)<br>
+ * (s)ftp://(username:password@)domain.com/...<br>
+ * git://(username:password@)domain.com/...<br>
+ * irc(6/s)://host:port/... //<br>
+ * afp over TCP/IP: afp://[<user>@]<host>[:<port>][/[<path>]]<br>
+ * telnet://<user>:<password>@<host>[:<port>/]<br>
+ * smb://[<user>@]<host>[:<port>][/[<path>]][?<param1>=<value1>[;<param2>=<value2>]]<br>
+ *
+ * @param {string} url
+ * @returns {*}
+ * @example
+ *
+ * isValidURI('https://github.com/lodash');
+ * // => true
+ */
+export declare function isValidURI(url: string): boolean;
+
+/**
+ * 是否为有效的邮政编码
+ *
+ * @param val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidZipcode('330561');
+ * // => true
+ */
+export declare function isValidZipcode(val: string): boolean;
