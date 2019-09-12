@@ -3,7 +3,7 @@ import isLightOS from './isLightOS';
 /**
  * 兼容 lightOS 离线包及 tzyj 在线
  * @param method {string}
- * @param params {string}
+ * @param params {object}
  * @param cb     {function}
  * @description
  * 分为两种情况<br>

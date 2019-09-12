@@ -1019,3 +1019,327 @@ export declare function isValidURI(url: string): boolean;
  * // => true
  */
 export declare function isValidZipcode(val: string): boolean;
+
+/**
+ * 获取数组的最后一项
+ *
+ * @since 1.2.1
+ * @param array
+ * @returns {boolean}
+ * @example
+ *
+ * last(['1,2,3']);
+ * // => '3';
+ */
+export declare function last(array: Array<any>): any;
+
+/**
+ * 根据提供函数生成的键生成一个新对象
+ * 使用 Object.keys(obj) 来迭代对象的键。 使用 Array.reduce() 创建一个具有相同值的新对象，并使用 fn 来映射键。
+ *
+ * @param obj
+ * @param fn
+ * @returns {{}}
+ * @example
+ *
+ * mapKeys({ a: 1, b: 2 }, (val, key) => key + val);
+ * // => { a1: 1, b2: 2 }
+ */
+export declare function mapKeys(obj: object, fn: any): any;
+
+/**
+ * 根据提供函数返回的值映射一个新对象
+ *
+ * @param obj
+ * @param fn
+ * @returns {{}}
+ * @example
+ *
+ * const users = {
+  fred: { user: 'fred', age: 40 },
+  pebbles: { user: 'pebbles', age: 1 }
+};
+ * mapValues(users, u => u.age);
+ * // => { fred: 40, pebbles: 1 }
+ */
+export declare function mapValues(obj: object, fn: any): any;
+
+/**
+ * 从两个或多个对象的组合中创建一个新对象
+ *
+ * {@link https://30secondsofcode.org/object#merge}
+ * @param objs
+ * @returns {*}
+ * @example
+ *
+ * merge(
+ {
+  a: [{ x: 2 }, { y: 4 }],
+  b: 1
+},
+ {
+  a: { z: 3 },
+  b: [2, 3],
+  c: 'foo'
+});
+ * // => { a: [ { x: 2 }, { y: 4 }, { z: 3 } ], b: [ 1, 2, 3 ], c: 'foo' }
+ */
+export declare function merge(objs: any): any;
+
+/**
+ * 兼容 lightOS 离线包及 tzyj 在线
+ * @param method {string}
+ * @param params {string}
+ * @param cb     {function}
+ * @description
+ * 分为两种情况<br>
+ * 在线及离线<br>
+ * 在线的情况下，H5应用是运行在 tzyj 的webview里，目前 navigator.userAgent 并没有 lightos，所以只能用tzyj自身注入的对象 window.winner<br>
+ * 离线包情况下，H5应用是运行在 light 的容器里。因此就可以利用 light 本身提供的SDK，即使 tzyj 自身封装扩展的方法，如获取自选股等，是基于 light 的容器，也需要改造
+ *
+ */
+export declare function nativeJSBridge({method: string, params: object, cb: any}): any;
+
+/**
+ * 当 H5 页面完全展示之前需要和 native 先进行交互，此用来控制时序。只有 App 调用了 ready(deviceready,hsAppReady) 方法后，表示 App 端已经准备完毕，已注入了相关 js 对象。防止 App 还没注入 js 对象方法，H5 过早调用 App 提供的方法
+ * 兼容 lightOS 离线包及 tzyj 在线
+ * @param cb  {function}
+ * @param type {string} 可选，默认为 light
+ */
+export declare function nativeReady(cb: any, type: string): any;
+
+/**
+ * 数字转换成中文的大写数字
+ *
+ * @since 1.2.5
+ * @param num
+ * @returns {string}
+ * @example
+ *
+ * numberToChinese(10001010);
+ * => "一千万一千一十"
+ */
+export declare function numberToChinese(num: number | string): string;
+
+/**
+ * 数组转换为键值对的对象
+ *
+ * @since 1.2.1
+ * @param array
+ * @returns {*}
+ * @example
+ *
+ * objectFromPairs([['a',1],['b',2]]);
+ * // => {a: 1, b: 2}
+ */
+export declare function objectFromPairs(array: Array<any>): any;
+
+/**
+ * 对象转化为键值对
+ * 使用 Object.keys() 和 Array.map() 遍历对象的键并生成一个包含键值对的数组。
+ *
+ * @param obj
+ * @returns {any[][]}
+ * @example
+ *
+ * objectToPairs({ a: 1, b: 2 });
+ * // => [['a',1],['b',2]]
+ */
+export declare function objectToPairs(obj: any): Array<any>;
+
+/**
+ * 返回对象的白名单属性
+ *
+ * {@link https://github.com/tj/node-only}
+ * @param obj
+ * @param keys
+ * @returns {*}
+ * @example
+ *
+ * var obj = {
+  name: 'tobi',
+  last: 'holowaychuk',
+  email: 'tobi@learnboost.com',
+  _id: '12345'
+};
+
+ * var user = only(obj, 'name last email');
+ * // => {
+      name: 'tobi',
+      last: 'holowaychuk',
+      email: 'tobi@learnboost.com'
+    }
+ */
+export declare function only(obj: any, keys: string): Array<any>;
+
+/**
+ * 图片压缩
+ * @param  {string}   file [压缩文件]
+ * @param  {object}   obj [压缩参数]
+ * @param  {function} cb   [回调函数]
+ * @return {string}        [返回压缩前和压缩后的格式]
+ */
+export declare function photoCompress(file: string, obj: any, cb: any): string;
+
+/**
+ * 对整数进行前置补0
+ *
+ * @param {number} num 数值
+ * @param {number} size 要补0的位数
+ * @returns {string}
+ * @example
+ *
+ * preZeroFill(12, 3);
+ * // => 012
+ */
+export declare function preZeroFill(num: number, size: number): string;
+
+/**
+ * 柯里化一个 Promise 函数
+ *
+ * @param func
+ * @returns {function(...[*]): Promise<any>}
+ * @example
+ *
+ * const delay = promisify((d, cb) => setTimout(cb, d));
+ * delay(200).then(() => console.log('Hi!'));
+ * // => Promise resolves after 2s
+ */
+export declare function promisify(func: any): any;
+
+/**
+ * Dom 操作，元素删除某个 class
+ *
+ * @since 1.1.5
+ * @param el HTML元素
+ * @param cls css类名
+ * @example
+ *
+ * <div class="box flex"></div>
+ * removeClass(document.querySelector('.box'), 'flex');
+ * // => <div class="box"></div>
+ */
+export declare function removeClass(el: HTMLElement, cls: string): void;
+
+/**
+ * RGB 转换为 Hex
+ *
+ * @since 1.2.0
+ * @param r r值
+ * @param g g值
+ * @param b b值
+ * @returns {string} Hex值
+ * @example
+ * rgbToHex(0,0,0);
+ * // => #000000
+ */
+export declare function rgbToHex(r: number, g: number, b: number): string;
+
+/**
+ * 滚动到顶部
+ * 使用document.documentElement.scrollTop或document.body.scrollTop获取到顶部的距离。从顶部滚动一小部分距离。
+ 使用window.requestAnimationFrame（）来滚动。
+ *
+ * @since 1.2.1
+ * @example
+ *
+ * scrollToTop();
+ */
+export declare function scrollToTop(): void;
+
+/**
+ * 获取数组，对象或字符串的大小。
+ * Get type of val (array, object or string). Use length property for arrays. Use length or size value if available or number of keys for objects. Use size of a Blob object created from val for strings.
+
+ 获取 val （array，object 或 string）的类型。 对于数组使用 length 属性。 对于对象，使用 length 或 size 如果可用的话，或者对象的键的数量。 对于字符串，使用根据 val 创建的Blob对象 的 size。
+
+ 通过 split('') 将字符串拆分成字符数组并返回其长度。
+
+ * @param val
+ * @returns {*}
+ * @example
+ *
+ * size([1, 2, 3, 4, 5]);
+ * // =>  5
+ *
+ * size('size');
+ * // => 4
+ *
+ * size({ one: 1, two: 2, three: 3 });
+ * // => 3
+ */
+export declare function size(val: any): number;
+
+/**
+ * 测试函数所花费的时间
+ *
+ * @since 1.2.1
+ * @param callback
+ * @returns {*}
+ * @example
+ *
+ * timeTaken(() => Math.pow(2, 10));
+ * // => 1024
+ */
+export declare function timeTaken(callback: () => void): any;
+
+/**
+ * 中划线转换小驼峰
+ *
+ * @since 1.1.7
+ * @param {string} variable
+ * @returns {string}
+ * @example
+ *
+ * toCamelCaseVar('get_account_list');
+ * // => getAccountList
+ */
+export declare function toCamelCaseVar(variable: string): string;
+
+/**
+ * 科学计数法转化为数值字符串形式
+ *
+ * @param {number} num
+ * @returns {string}
+ * @example
+ *
+ * toNonExponential(3.3e-7);
+ * => // "0.00000033"
+ *
+ * toNonExponential(3e-7);
+ * => // "0.0000003"
+ *
+ * toNonExponential(1.401e10);
+ * => // "14010000000"
+ *
+ * toNonExponential(0.0004);
+ * => // "0.0004"
+ */
+export declare function toNonExponential(num: number): string;
+
+/**
+ * toZhCN 把字符串转成以分为单位的整数。
+ *
+ * @param {number|string} num 金额
+ * @returns {string} 中文大写的金额, 标准会计格式
+ * @example
+ *
+ * toZhCN(500.3);
+ * // => 伍佰元叁角整
+ */
+export declare function toZhCN(num: string): string;
+
+/**
+ * 清除空格
+ *
+ * @param str
+ * @param type 1-所有空格  2-前后空格  3-前空格 4-后空格
+ * @returns {*}
+ * @example
+ *
+ * trim(' 123 ');
+ * // => 123
+ */
+export declare function trim(str: string, type: number): string;
+
+

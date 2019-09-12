@@ -5,10 +5,10 @@
  * @returns {string} 中文大写的金额, 标准会计格式
  * @example
  *
- * tozhCN(500.3);
+ * toZhCN(500.3);
  * // => 伍佰元叁角整
  */
-function tozhCN(num) {
+function toZhCN(num) {
   if (typeof num === 'number') {
     num = String(num);
   }
@@ -39,4 +39,4 @@ function tozhCN(num) {
     .replace(/(元|角)$/g, '$1整');
 }
 
-export default tozhCN;
+export default toZhCN;
