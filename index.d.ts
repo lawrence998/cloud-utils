@@ -1351,4 +1351,15 @@ export declare function trim(str: string, type: number): string;
  */
 export declare function combineURLs(baseURL: string, relativeURL: string): string;
 
+/**
+ * 是否是微博内核
+ *
+ * @returns {boolean}
+ * @example
+ *
+ * inWeibo();
+ * // => false
+ */
+export declare function inWeibo(): boolean;
+
 

@@ -90,3 +90,4 @@ export {default as isLightOS} from './core/isLightOS';
 export {default as nativeJSBridge} from './core/nativeJSBridge';
 export {default as nativeReady} from './core/nativeReady';
 export {default as combineURLs} from './core/combineURLs';
+export {default as inWeibo} from './core/inWeibo';

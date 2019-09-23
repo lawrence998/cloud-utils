@@ -10,7 +10,7 @@
 function inWeixin() {
   if (typeof navigator === 'undefined') return;
 
-  var ua = navigator.userAgent.toLowerCase();
+  const ua = navigator.userAgent.toLowerCase();
 
   return ua.indexOf('micromessenger') !== -1;
 }

@@ -1,17 +1,18 @@
 /**
- * 是否是支付宝内核
+ * 是否是微博内核
  *
  * @returns {boolean}
  * @example
  *
- * inAlipay();
+ * inWeibo();
  * // => false
  */
-function inAlipay() {
+function inWeibo() {
   if (typeof navigator === 'undefined') return;
 
   const ua = navigator.userAgent.toLowerCase();
-  return ua.indexOf('alipayclient') !== -1;
+
+  return ua.indexOf('weibo') !== -1;
 }
 
-export default inAlipay;
+export default inWeibo;
