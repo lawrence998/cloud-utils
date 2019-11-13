@@ -1362,4 +1362,19 @@ export declare function combineURLs(baseURL: string, relativeURL: string): strin
  */
 export declare function inWeibo(): boolean;
 
+/**
+ * 动态加载 script
+ *
+ * @param {string} src
+ * @param {function} callback
+ * @example
+ *
+ * dynamicLoadScript('https://cdn.jsdelivr.net/npm/tinymce-all-in-one@4.9.3/tinymce.min.js', () => {
+ *   console.log('加载成功');
+ * })
+ * // => 加载成功
+ *
+ */
+export declare function dynamicLoadScript(src, callback): void
+
 
