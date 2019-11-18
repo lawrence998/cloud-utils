@@ -1377,4 +1377,63 @@ export declare function inWeibo(): boolean;
  */
 export declare function dynamicLoadScript(src, callback): void
 
+/**
+ * 是否为有效的微信号
+ * 6至20位，以字母开头，字母，数字，减号，下划线
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidWechatID('liwenbo_2010');
+ * // => true
+ */
+export declare function isValidWechatID(val: string): boolean
+
+/**
+ * 是否为有效的16进制颜色
+ * 6至20位，以字母开头，字母，数字，减号，下划线
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidHexadecimalColor('#f00');
+ * // => true
+ *
+ * isValidHexadecimalColor('#fe9de8');
+ * // => true
+ */
+export declare function isValidHexadecimalColor(val: string): boolean
+
+/**
+ * 是否为有效的IP v4
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidIPV4('172.16.0.0');
+ * // => true
+ *
+ * isValidIPV4('127.0.0.0');
+ * // => true
+ *
+ */
+export declare function isValidIPV4(val: string): boolean
+
+/**
+ * 是否为有效的IP v6
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidIPV6('2031:0000:130f:0000:0000:09c0:876a:130b');
+ * // => true
+ *
+ */
+export declare function isValidIPV6(val: string): boolean
+
+
 

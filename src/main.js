@@ -92,3 +92,7 @@ export {default as nativeReady} from './core/nativeReady';
 export {default as combineURLs} from './core/combineURLs';
 export {default as inWeibo} from './core/inWeibo';
 export {default as dynamicLoadScript} from './core/dynamicLoadScript';
+export {default as isValidWechatID} from './core/isValidWechatID';
+export {default as isValidHexadecimalColor} from './core/isValidHexadecimalColor';
+export {default as isValidIPV4} from './core/isValidIPV4';
+export {default as isValidIPV6} from './core/isValidIPV6';
