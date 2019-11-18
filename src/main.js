@@ -1,7 +1,3 @@
-import isValidBankNo from './core/isValidBankNumber';
-import isValidBase64Format from './core/isValidBase64Format';
-import isUnifiedSocialCreditCode from './core/isUnifiedSocialCreditCode';
-
 export {default as accAdd} from './core/accAdd';
 export {default as accDiv} from './core/accDiv';
 export {default as accMul} from './core/accMul';
