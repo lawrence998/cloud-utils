@@ -1,3 +1,7 @@
+import isValidBankNo from './core/isValidBankNumber';
+import isValidBase64Format from './core/isValidBase64Format';
+import isUnifiedSocialCreditCode from './core/isUnifiedSocialCreditCode';
+
 export {default as accAdd} from './core/accAdd';
 export {default as accDiv} from './core/accDiv';
 export {default as accMul} from './core/accMul';
@@ -96,3 +100,16 @@ export {default as isValidWechatID} from './core/isValidWechatID';
 export {default as isValidHexadecimalColor} from './core/isValidHexadecimalColor';
 export {default as isValidIPV4} from './core/isValidIPV4';
 export {default as isValidIPV6} from './core/isValidIPV6';
+export {default as isValidPassport} from './core/isValidPassport';
+export {default as isValidTelephone} from './core/isValidTelephone';
+export {default as isMobileLoose} from './core/isMobileLoose';
+export {default as isMobileStrict} from './core/isMobileStrict';
+export {default as isValidChineseName} from './core/isValidChineseName';
+export {default as isNewEnergyLicenseNo} from './core/isNewEnergyLicenseNo';
+export {default as isValidBankNo} from './core/isValidBankNo';
+export {default as isValidBase64Format} from './core/isValidBase64Format';
+export {default as isValidAShareCode} from './core/isValidAShareCode';
+export {default as isUnifiedSocialCreditCode} from './core/isUnifiedSocialCreditCode';
+export {default as isValidTestScores} from './core/isValidTestScores';
+export {default as isValidSemverVersion} from './core/isValidSemverVersion';
+export {default as isValidChineseTelephone} from './core/isValidChineseTelephone';

@@ -1435,5 +1435,215 @@ export declare function isValidIPV4(val: string): boolean
  */
 export declare function isValidIPV6(val: string): boolean
 
+/**
+ * 是否为有效的护照（包含香港、澳门）
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidPassport('s28233515');
+ * // => true
+ *
+ * isValidPassport('141234567');
+ * // => true
+ *
+ * isValidPassport('159203084');
+ * // => true
+ *
+ * isValidPassport('MA1234567');
+ * // => true
+ *
+ * isValidPassport('K25345719');
+ * // => true
+ */
+export declare function isValidPassport(val: string): boolean
+
+/**
+ * 是否为有效的电话(座机)
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isTelephone('0571-4211236');
+ * // => true
+ */
+export declare function isValidTelephone(val: string): boolean
+
+/**
+ * 是否为有效的手机号，中国手机号(最宽松), 只要是1开头即可, 如果你的手机号是用来接收短信, 优先建议选择这一条
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isMobileLoose('008618311006933');
+ * // => true
+ *
+ * isMobileLoose('+8617888829981');
+ * // => true
+ *
+ * isMobileLoose('19119255642');
+ * // => true
+ */
+export declare function isMobileLoose(val: string): boolean
+
+/**
+ * 是否为有效的手机号，中国手机号(严谨), 根据工信部2019年最新公布的手机号段
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isMobileStrict('008618311006933');
+ * // => true
+ *
+ * isMobileStrict('+8617888829981');
+ * // => true
+ *
+ * isMobileStrict('19119255642');
+ * // => true
+ */
+export declare function isMobileStrict(val: string): boolean
+
+/**
+ * 是否为有效的中文姓名
+ *
+ * @param val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidChineseName('葛二蛋');
+ * // => true
+ *
+ * isValidChineseName('凯文·杜兰特');
+ * // => true
+ *
+ * isValidChineseName('德克·维尔纳·诺维茨基');
+ * // => true
+ */
+export declare function isValidChineseName(val: string): boolean
+
+/**
+ * 是否为有效的新能源车牌号
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isNewEnergyLicenseNo('京AD92035');
+ * // => true
+ *
+ * isNewEnergyLicenseNo('甘G23459F');
+ * // => true
+ */
+export declare function isNewEnergyLicenseNo(val: string): boolean
+
+/**
+ * 是否为有效的银行卡号（10到30位, 覆盖对公/私账户, 参考[微信支付](https://pay.weixin.qq.com/wiki/doc/api/xiaowei.php?chapter=22_1)）
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidBankNo('6234567890');
+ * // => true
+ *
+ * isValidBankNo('6222026006705354217');
+ * // => true
+ */
+export declare function isValidBankNo(val: string): boolean
+
+/**
+ * 是否为有效的 base64格式
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidBase64Format('data:image/gif;base64,xxxx==')
+ * => true
+ */
+export declare function isValidBase64Format(val: string): boolean
+
+/**
+ * 是否为有效的A股代码
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidAShareCode('sz000858');
+ * // => true
+ *
+ * isValidAShareCode('SZ002136');
+ * // => true
+ *
+ * isValidAShareCode('SH600600');
+ * // => true
+ *
+ * isValidAShareCode('sh600600');
+ * // => true
+ */
+export declare function isValidAShareCode(val: string): boolean
+
+/**
+ * 是否为有效的统一社会信用代码
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isUnifiedSocialCreditCode('91230184MA1BUFLT44');
+ * // => true
+ *
+ * isUnifiedSocialCreditCode('92371000MA3MXH0E3W');
+ * // => true
+ */
+export declare function isUnifiedSocialCreditCode(val: string): boolean
+
+/**
+ * 是否为有效的考卷分数, 大于等于0, 小于等于150, 支持小数位出现5, 如145.5
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidTestScores('150');
+ * // => true
+ *
+ * isValidTestScores('149.5');
+ * // => true
+ */
+export declare function isValidTestScores(val: string): boolean
+
+/**
+ * 版本号格式必须为X.Y.Z
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidSemverVersion('16.3.10');
+ * // => true
+ */
+export declare function isValidSemverVersion(val: string): boolean
+
+/**
+ * 是否为有效的国内座机电话
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isTelephone('0571-4211236');
+ * // => true
+ *
+ * isTelephone('0341-86091234');
+ * // => true
+ */
+export declare function isValidChineseTelephone(val: string): boolean
+
 
 
