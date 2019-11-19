@@ -1645,5 +1645,113 @@ export declare function isValidSemverVersion(val: string): boolean
  */
 export declare function isValidChineseTelephone(val: string): boolean
 
+/**
+ * 是否为有效的迅雷链接
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidThunder('thunder://QUEsICdtYWduZXQ6P3h0PXVybjpidGloOjBCQTE0RTUxRkUwNjU1RjE0Qzc4NjE4RjY4NDY0QjZFNTEyNjcyOUMnWlo=');
+ * // => true
+ */
+export declare function isValidThunder(val: string): boolean
 
+/**
+ * 是否为有效的ed2k链接(宽松匹配)
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidEd2kLinkLoose('ed2k://|file|%E5%AF%84%E7%94%9F%E8%99%AB.PARASITE.2019.HD-1080p.X264.AAC-UUMp4(ED2000.COM).mp4|2501554832|C0B93E0879C6071CBED732C20CE577A3|h=5HTKZPQFYRKORN52I3M7GQ4QQCIHFIBV|/');
+ * // => true
+ */
+export declare function isValidEd2kLinkLoose(val: string): boolean
 
+/**
+ * 是否为有效的磁力链接(宽松匹配)
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidMagnetLinkLoose('magnet:?xt=urn:btih:40A89A6F4FB1498A98087109D012A9A851FBE0FC');
+ * // => true
+ */
+export declare function isValidMagnetLinkLoose(val: string): boolean
+
+/**
+ * 是否为有效的子网掩码
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidSubnetMask('255.255.255.0');
+ * // => true
+ */
+export declare function isValidSubnetMask(val: string): boolean
+
+/**
+ * 是否为有效的md5格式(32位)
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidMD5('21fe181c5bfc16306a6828c1f7b762e8');
+ * // => true
+ */
+export declare function isValidMD5(val: string): boolean
+
+/**
+ * 是否为有效的视频链接地址（视频格式可按需增删）
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidVideoLink('http://www.abc.com/video/wc.avi');
+ * // => true
+ */
+export declare function isValidVideoLink(val: string): boolean
+
+/**
+ * 是否为有效的图片链接地址（图片格式可按需增删）
+ *
+ * @param {string} val
+ * @returns {boolean}
+ * @example
+ *
+ * isValidImageLink('https://www.abc.com/logo.png');
+ * // => true
+ */
+export declare function isValidImageLink(val: string): boolean
+
+/**
+ * 是否为有效的用户名，4到16位（字母，数字，下划线，减号）
+ *
+ * @param {string} val
+ * @param {number} minLength
+ * @param {number} maxLength
+ * @returns {boolean}
+ * @example
+ *
+ * isValidUserName('xiaohua_qq');
+ * // => true
+ */
+export declare function isValidUserName(val: string, minLength: number, maxLength: number): boolean
+
+/**
+ * 是否为有效的密码强度，最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符
+ *
+ * @param {string} val
+ * @param {number} minLength 最小位数
+ * @returns {boolean}
+ * @example
+ *
+ * isValidPassword('Kd@curry666');
+ * // => true
+ */
+export declare function isValidPassword(val: string, minLength: number): boolean
