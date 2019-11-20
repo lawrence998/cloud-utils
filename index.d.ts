@@ -1755,3 +1755,14 @@ export declare function isValidUserName(val: string, minLength: number, maxLengt
  * // => true
  */
 export declare function isValidPassword(val: string, minLength: number): boolean
+
+/**
+ * 判断 iPhone X Series 机型，刘海屏
+ *
+ * @returns {boolean}
+ * @example
+ *
+ * isPhoneX()
+ * => true
+ */
+export declare function isPhoneX(): boolean

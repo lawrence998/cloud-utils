@@ -1,3 +1,5 @@
+import isPhoneX from './core/isPhoneX';
+
 export {default as accAdd} from './core/accAdd';
 export {default as accDiv} from './core/accDiv';
 export {default as accMul} from './core/accMul';
@@ -117,3 +119,4 @@ export {default as isValidVideoLink} from './core/isValidVideoLink';
 export {default as isValidImageLink} from './core/isValidImageLink';
 export {default as isValidUserName} from './core/isValidUserName';
 export {default as isValidPassword} from './core/isValidPassword';
+export {default as isPhoneX} from './core/isPhoneX';
