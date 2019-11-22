@@ -120,3 +120,4 @@ export {default as isValidImageLink} from './core/isValidImageLink';
 export {default as isValidUserName} from './core/isValidUserName';
 export {default as isValidPassword} from './core/isValidPassword';
 export {default as isPhoneX} from './core/isPhoneX';
+export {default as setDocumentTitle} from './core/setDocumentTitle';

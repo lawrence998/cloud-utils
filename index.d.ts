@@ -1766,3 +1766,13 @@ export declare function isValidPassword(val: string, minLength: number): boolean
  * => true
  */
 export declare function isPhoneX(): boolean
+
+/**
+ * 动态设置网页中的标题
+ *
+ * @param title
+ * @param img
+ */
+export declare function setDocumentTitle(title: string, img?: string): boolean
+
+
