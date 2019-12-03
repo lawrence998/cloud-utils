@@ -1775,4 +1775,26 @@ export declare function isPhoneX(): boolean
  */
 export declare function setDocumentTitle(title: string, img?: string): boolean
 
+/**
+ * 是否是QQ浏览器内核
+ *
+ * @returns {boolean}
+ * @example
+ *
+ * inQQBrowser();
+ * // => false
+ */
+export declare function inQQBrowser(): boolean
+
+/**
+ * 是否是UC浏览器内核
+ *
+ * @returns {boolean}
+ * @example
+ *
+ * inUCBrowser();
+ * // => false
+ */
+export declare function inUCBrowser(): boolean
+
 
