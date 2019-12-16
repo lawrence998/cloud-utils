@@ -372,7 +372,7 @@ export declare function formatBankCard(val: string): string;
  * formatDate(Date.now(), 'yyyy-M-d h:m:s.S')
  * // => 2006-7-2 8:9:4.18
  */
-export declare function formatDate(date: any, fmt: string): string;
+export declare function formatDate(date: any, fmt?: string): string;
 
 /**
  * 用符号（默认为逗号）格式化金钱
@@ -402,7 +402,7 @@ export declare function formatMoney(val: string, symbol: string): string;
  * formatNumber(2, 2, '.', ',');
  * // => 2.00
  */
-export declare function formatNumber(number: number, decimals: number, decPoint: string, thousandsSep: string, roundTag: string): number;
+export declare function formatNumber(number: number, decimals?: number, decPoint?: string, thousandsSep?: string, roundTag?: 'ceil' | 'floor' | 'round'): number;
 
 /**
  * 手机号码中间部分替换成指定符号
@@ -507,6 +507,16 @@ export declare function getDayOfYearWeek(time: string): number;
  */
 export declare function getDays(time: string, len: number, direction: number): Array<string>;
 
+interface IDeviceInfo {
+  androidChrome: boolean,
+  ipad: boolean,
+  iphone: boolean,
+  android: boolean,
+  ios: boolean,
+  os: 'ios' | 'android',
+  osVersion: string,
+  webView: null
+}
 /**
  * 获取移动设备信息，如是否是iOS，android等
  *
@@ -516,7 +526,7 @@ export declare function getDays(time: string, len: number, direction: number): A
  * getDevice();
  * // => {"androidChrome":false,"ipad":false,"iphone":true,"android":false,"ios":true,"os":"ios","osVersion":"9.1","webView":null}
  */
-export declare function getDevice(): object;
+export declare function getDevice(): IDeviceInfo;
 
 /**
  * 得到两个时间的时间差（返回天数）
