@@ -18,8 +18,8 @@ function formatNumber(number, decimals = 2, decPoint = '.', thousandsSep = ',', 
   number = (number + '').replace(/[^0-9+-Ee.]/g, '');
   const n = !isFinite(+number) ? 0 : +number;
   const prec = !isFinite(+decimals) ? 0 : Math.abs(decimals);
-  const sep = (typeof thousandsSep === 'undefined') ? ',' : thousandsSep;
-  const dec = (typeof decPoint === 'undefined') ? '.' : decPoint;
+  const sep = thousandsSep || ',';
+  const dec = decPoint || '.';
   const re = /(-?\d+)(\d{3})/;
   let s = '';
   const toFixedFix = function (n, prec) {
