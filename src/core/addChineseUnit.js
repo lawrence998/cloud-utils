@@ -51,6 +51,8 @@ function addChineseUnit(number, decimalDigit) {
   };
 
   var getDigit = function (integer) {
+    // 当为负数时的会出现不转换的问题，因此取绝对值
+    integer = Math.abs(integer);
     var digit = -1;
     while (integer >= 1) {
       digit++;
