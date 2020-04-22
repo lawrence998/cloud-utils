@@ -95,6 +95,3 @@ $ npm test
 ```bash
 $ npm run release
 ```
-
-## 待办
-- [] 添加按需引用支持
