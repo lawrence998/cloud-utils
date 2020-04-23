@@ -517,6 +517,7 @@ interface IDeviceInfo {
   osVersion: string,
   webView: null
 }
+
 /**
  * 获取移动设备信息，如是否是iOS，android等
  *
@@ -1807,4 +1808,30 @@ export declare function inQQBrowser(): boolean
  */
 export declare function inUCBrowser(): boolean
 
+/**
+ * 两个值之间的深入比较，以确定它们是否相等
+ *
+ * @param {Object} a
+ * @param {Object} b
+ * @returns {*}
+ * @example
+ *
+ * equals({ a: [2, { e: 3 }], b: [4], c: 'foo' }, { a: [2, { e: 3 }], b: [4], c: 'foo' });
+ *
+ * // => true
+ */
+export declare function equals(a: any, b: any): boolean
 
+/**
+ * 处理emoji，用于把用utf16编码的字符转换成实体字符
+ * @param {string} str 需要编译/解析的字符串
+ * @param {string} type encode 编译 decode 转义
+ * @returns {string} 编译/解析后的字符串
+ * @example
+ *
+ * handleEmoji("😃", "encode");
+ * // => "&#128515;"
+ * handleEmoji("&#128522;", "decode")；
+ * // => "😊"
+ */
+export declare function handleEmoji(str: string, type: string): string

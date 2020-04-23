@@ -15,6 +15,7 @@
   "types": "index.d.ts",
   "files": [
     "dist/*.js",
+    "src",
     "index.d.ts"
   ],
   "sideEffects": false,
@@ -83,9 +84,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cklwblove/cloud-utils.git"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
-  },
+  }
 }

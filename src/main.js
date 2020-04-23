@@ -123,3 +123,5 @@ export {default as isPhoneX} from './core/isPhoneX';
 export {default as setDocumentTitle} from './core/setDocumentTitle';
 export {default as inQQBrowser} from './core/inQQBrowser';
 export {default as inUCBrowser} from './core/inUCBrowser';
+export {default as equals} from './core/equals';
+export {default as handleEmoji} from './core/handleEmoji';
