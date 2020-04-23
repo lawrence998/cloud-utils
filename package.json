@@ -1,7 +1,7 @@
 {
   "name": "@liwb/cloud-utils",
   "description": "A collection of utils",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "author": {
     "name": "liwb",
     "email": "lwbhtml@163.com"
@@ -15,7 +15,6 @@
   "types": "index.d.ts",
   "files": [
     "dist/*.js",
-    "src",
     "index.d.ts"
   ],
   "sideEffects": false,
@@ -84,5 +83,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cklwblove/cloud-utils.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
