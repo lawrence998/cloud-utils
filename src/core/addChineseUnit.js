@@ -86,3 +86,10 @@ function addChineseUnit(number, decimalDigit) {
 }
 
 export default addChineseUnit;
+
+/**
+ * 2020-3-18 23:11:54
+ * 支持负值格式转换
+ * eg:
+ * -123456.33 -> "-123.46万"
+ */
