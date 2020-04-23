@@ -1835,3 +1835,18 @@ export declare function equals(a: any, b: any): boolean
  * // => "😊"
  */
 export declare function handleEmoji(str: string, type: string): string
+
+/**
+ * 删除对象里面value值为null的键值对
+ * @param {*} data 接口返回的blob数据
+ * @param {*} name excel名称
+ * @param {*} callBack 导出成功/失败回调  回调返回{type:fail/success}  fail情况下 返回{ type: "fail", code, msg }
+ */
+export declare function exportXls(data: any, name: string, callBack: () => void): void;
+
+/**
+ * 获取图片的base64 url
+ * @param {string} url 图片url
+ * @returns {Promise} 图片base64信息
+ */
+export declare function getImgBase64(url: string): Promise<string>
