@@ -1850,3 +1850,17 @@ export declare function exportXls(data: any, name: string, callBack: () => void)
  * @returns {Promise} 图片base64信息
  */
 export declare function getImgBase64(url: string): Promise<string>
+
+/**
+ * 检查是否是emoji表情
+ * @param {*} value 正则校验变量
+ * @return {boolean} 正则校验结果 true: 是emoji表情 false: 不是emoji表情
+ */
+export function isEmoji(value: string): boolean
+
+/**
+ * 检查是否为特殊字符
+ * @param {string} value 正则校验的变量
+ * @returns {boolean} 正则校验结果 true: 是特殊字符 false: 不是特殊字符
+ */
+export function isSpecialChar(value: string): boolean

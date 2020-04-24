@@ -127,3 +127,5 @@ export {default as equals} from './core/equals';
 export {default as handleEmoji} from './core/handleEmoji';
 export {default as getImgBase64} from './core/getImgBase64';
 export {default as exportXls} from './core/exportXls';
+export {default as isEmoji} from './core/isEmoji';
+export {default as isSpecialChar} from './core/isSpecialChar';
