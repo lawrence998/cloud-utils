@@ -1,10 +1,10 @@
 {
-  "name": "@liwb/cloud-utils",
+  "name": "@lawrence_ch/cloud-utils",
   "description": "A collection of utils",
-  "version": "1.6.3",
+  "version": "0.0.2",
   "author": {
-    "name": "liwb",
-    "email": "lwbhtml@163.com"
+    "name": "lawrence_ch",
+    "email": "lawrence_ch@163.com"
   },
   "main": "dist/cloud-utils.min.js",
   "module": "dist/cloud-utils.esm.js",
@@ -82,7 +82,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cklwblove/cloud-utils.git"
+    "url": "git+https://github.com/lawrence998/cloud-utils.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
