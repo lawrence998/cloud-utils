@@ -1,11 +1,11 @@
-# [cloud-utils](https://github.com/cklwblove/cloud-utils)
-[![](https://img.shields.io/badge/Powered%20by-cloud--utils-brightgreen.svg)](https://github.com/cklwblove/cloud-utils)
+# [cloud-utils](https://github.com/lawrence998/cloud-utils)
+[![](https://img.shields.io/badge/Powered%20by-cloud--utils-brightgreen.svg)](https://github.com/lawrence998/cloud-utils)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yanhaijing/jslib-base/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/cklwblove/cloud-utils.svg?branch=master)](https://travis-ci.org/cklwblove/cloud-utils)
-[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/@liwb/cloud-utils)
-[![NPM downloads](http://img.shields.io/npm/dm/cloud-utils.svg?style=flat-square)](http://www.npmtrends.com/@liwb/cloud-utils)
-[![Coverage Status](https://coveralls.io/repos/github/cklwblove/cloud-utils/badge.svg)](https://coveralls.io/github/cklwblove/cloud-utils)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/cklwblove/cloud-utils.svg)](http://isitmaintained.com/project/cklwblove/cloud-utils "Percentage of issues still open")
+[![Build Status](https://travis-ci.org/cklwblove/cloud-utils.svg?branch=master)](https://travis-ci.org/lawrence998/cloud-utils)
+[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/@lawrence_ch/cloud-utils)
+[![NPM downloads](http://img.shields.io/npm/dm/cloud-utils.svg?style=flat-square)](http://www.npmtrends.com/@lawrence998/cloud-utils)
+[![Coverage Status](https://coveralls.io/repos/github/lawrence998/cloud-utils/badge.svg)](https://coveralls.io/github/lawrence998/cloud-utils)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/lawrence998/cloud-utils.svg)](http://isitmaintained.com/project/lawrence998/cloud-utils "Percentage of issues still open")
 
 常用的 Javascript 工具类方法集合
 
@@ -25,25 +25,25 @@
 通过 npm 下载安装代码
 
 ```bash
-$ npm install --save @liwb/cloud-utils
+$ npm install --save @lawrence_ch/cloud-utils
 ```
 
 如果你是 node 环境
 
 ```js
-var { formatDate } = require('@liwb/cloud-utils.common');
+var { formatDate } = require('@lawrence_ch/cloud-utils.common');
 ```
 
 如果你是 webpack 等环境
 
 ```js
-import { formatDate } from '@liwb/cloud-utils.esm';
+import { formatDate } from '@lawrence_ch/cloud-utils.esm';
 ```
 
 如果你是 requirejs 环境
 
 ```js
-requirejs(['node_modules/@liwb/cloud-utils/dist/cloud-utils.js'], function (utils) {
+requirejs(['node_modules/@lawrence_ch/cloud-utils/dist/cloud-utils.js'], function (utils) {
     var formatDate = utils.formatDate;
 })
 ```
@@ -51,7 +51,7 @@ requirejs(['node_modules/@liwb/cloud-utils/dist/cloud-utils.js'], function (util
 如果你是浏览器环境
 
 ```html
-<script src="node_modules/@liwb/cloud-utils/dist/cloud-utils.min.js"></script>
+<script src="node_modules/@lawrence_ch/cloud-utils/dist/cloud-utils.min.js"></script>
 
 <script>
     var utils = window['cloud-utils'];
@@ -59,7 +59,7 @@ requirejs(['node_modules/@liwb/cloud-utils/dist/cloud-utils.js'], function (util
 ```
 
 ## 文档
-[API](https://cklwblove.github.io/cloud-utils/)
+[API](https://lawrence998.github.io/cloud-utils/)
 
 ## 贡献指南
 首次运行需要先安装依赖
