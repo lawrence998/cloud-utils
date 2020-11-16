@@ -4,8 +4,8 @@
 [![Build Status](https://travis-ci.org/cklwblove/cloud-utils.svg?branch=master)](https://travis-ci.org/lawrence998/cloud-utils)
 [![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/@lawrence_ch/cloud-utils)
 [![NPM downloads](http://img.shields.io/npm/dm/cloud-utils.svg?style=flat-square)](http://www.npmtrends.com/@lawrence998/cloud-utils)
-[![Coverage Status](https://coveralls.io/repos/github/lawrence998/cloud-utils/badge.svg)](https://coveralls.io/github/lawrence998/cloud-utils)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/lawrence998/cloud-utils.svg)](http://isitmaintained.com/project/lawrence998/cloud-utils "Percentage of issues still open")
+[![Coverage Status](https://coveralls.io/repos/github/cklwblove/cloud-utils/badge.svg)](https://coveralls.io/github/lawrence998/cloud-utils)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/cklwblove/cloud-utils.svg)](http://isitmaintained.com/project/lawrence998/cloud-utils "Percentage of issues still open")
 
 常用的 Javascript 工具类方法集合
 

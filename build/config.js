@@ -10,10 +10,10 @@ const moduleName = 'cloud-utils';
 
 const banner =
   `/*!
- * ${moduleName} v${version} (https://github.com/cklwblove/cloud-utils)
- * API https://cklwblove.github.io/cloud-utils/
- * Copyright 2017-${(new Date).getFullYear()} ${pack.author.name}. All Rights Reserved
- * Licensed under ${pack.license} (https://github.com/cklwblove/cloud-utils/blob/master/LICENSE)
+ * ${moduleName} v${version} (https://github.com/lawrence998/cloud-utils)
+ * API https://lawrence998.github.io/cloud-utils/
+ * Copyright 2020-${(new Date).getFullYear()} ${pack.author.name}. All Rights Reserved
+ * Licensed under ${pack.license} (https://github.com/lawrence998/cloud-utils/blob/master/LICENSE)
  */
  `
 
