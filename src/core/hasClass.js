@@ -2,8 +2,8 @@
  * Dom 操作，元素是包含某个 class
  *
  * @since 1.1.5
- * @param el HTML元素
- * @param cls css类名
+ * @param {element} el HTML元素
+ * @param {string} cls css类名
  * @returns {boolean}
  * @example
  *

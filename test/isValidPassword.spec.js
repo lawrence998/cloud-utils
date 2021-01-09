@@ -1,9 +1,9 @@
 var {expect} = require('chai');
 var {isValidPassword} = require('../dist/cloud-utils');
 
-describe('#isValidPassword() 是否为有效的密码(6-16位字母加数字组合，不能包含空格)', function () {
-  it('isValidPassword(\'a23456abc\') should return true', function () {
-    expect(isValidPassword('a23456abc')).to.be.ok;
+describe('#isValidPassword() 是否为有效的密码强度，最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符', function () {
+  it('isValidPassword(\'Kd@curry666\') should return true', function () {
+    expect(isValidPassword('Kd@curry666')).to.be.ok;
   });
 
   it('isValidPassword(\'123456qq.com\') should return false', function () {

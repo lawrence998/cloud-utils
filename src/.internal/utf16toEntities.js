@@ -1,6 +1,7 @@
 /**
  * utf16字符串转实体字符
  * @param {string} str 待编译的字符串
+ * @returns {string} 实体字符
  */
 function utf16toEntities(str) {
   if (!str) return '';

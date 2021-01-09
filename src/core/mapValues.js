@@ -1,8 +1,8 @@
 /**
  * 根据提供函数返回的值映射一个新对象
  *
- * @param obj
- * @param fn
+ * @param {object} obj 目标底薪
+ * @param {function} fn 函数
  * @returns {{}}
  * @example
  *

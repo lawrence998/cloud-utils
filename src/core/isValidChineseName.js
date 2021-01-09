@@ -1,7 +1,7 @@
 /**
  * 是否为有效的中文姓名
  *
- * @param val
+ * @param {string} val
  * @returns {boolean}
  * @example
  *

@@ -11,7 +11,7 @@ function exportXls(data, name = 'excel', callBack) {
   }
   let reader = new FileReader();
   reader.readAsText(data, 'utf-8');
-  reader.onload = (e) => {
+  reader.onload = () => {
     try {
       let {code, msg} = JSON.parse(reader.result);
       if (code && code !== 200) {

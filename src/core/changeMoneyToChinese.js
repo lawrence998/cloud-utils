@@ -2,7 +2,7 @@
  * 数字金额大写转换
  *
  * @since 1.2.5
- * @param n
+ * @param {number} n 目标金额
  * @returns {string}
  * @example
  *

@@ -3,7 +3,7 @@ import getMonthOfDay from './getMonthOfDay';
  * 获取某年有多少天
  *
  * @since 1.2.4
- * @param time
+ * @param {string} time 目标年份
  * @returns {number}
  * @example
  *

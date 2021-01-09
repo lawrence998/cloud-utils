@@ -2,8 +2,8 @@
  * 将文本插入到文本区域的光标位置<br>
  * _应用场景：_如在评论框里，在光标位置里插入emoji等
  *
- * @param {object} dom对象
- * @param {string} str
+ * @param {object} dom dom对象
+ * @param {string} str str
  * @example
  *
  * <textarea name="textarea" rows="10" cols="50">你好世界~</textarea>

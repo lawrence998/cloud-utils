@@ -2,7 +2,7 @@
  * 对象转化为键值对
  * 使用 Object.keys() 和 Array.map() 遍历对象的键并生成一个包含键值对的数组。
  * 
- * @param obj
+ * @param {object} obj 目标对象
  * @returns {any[][]}
  * @example
  *

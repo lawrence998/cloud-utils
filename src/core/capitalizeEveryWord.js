@@ -2,7 +2,7 @@
  * 大写每个单词的首字母
  *
  * @since 1.2.1
- * @param str
+ * @param {string} str 目标字符串
  * @returns {string|*|void|XML}
  * @example
  *

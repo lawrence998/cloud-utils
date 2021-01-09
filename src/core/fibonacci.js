@@ -3,7 +3,7 @@
  * 创建一个特定长度的空数组，初始化前两个值（0和1）。使用Array.reduce（）向数组中添加值，后面的一个数等于前面两个数相加之和（前两个除外）。
  *
  * @since 1.2.1
- * @param num
+ * @param {number} num
  * @returns {*}
  * @example
  *

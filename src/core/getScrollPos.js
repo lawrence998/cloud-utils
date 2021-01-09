@@ -3,7 +3,7 @@
  * 如果已定义，请使用pageXOffset和pageYOffset，否则使用scrollLeft和scrollTop，可以省略el来使用window的默认值。
  *
  * @since 1.2.1
- * @param el
+ * @param {element} el 目标节点
  * @returns {{x: Number, y: Number}}
  * @example
  *

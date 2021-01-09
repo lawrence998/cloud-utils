@@ -1,8 +1,8 @@
 /**
  * 深层映射对象键
  *
- * @param obj
- * @param fn
+ * @param {object} obj 目标对象
+ * @param {function} fn 函数
  * @returns {{}}
  * @example
  *

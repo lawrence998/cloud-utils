@@ -3,7 +3,7 @@
  * 如果a值是空对象，集合，没有可枚举属性或任何不被视为集合的类型，则返回true。
  *
  * {@link https://30secondsofcode.org/type#isempty}
- * @param val
+ * @param {*} val
  * @returns {boolean}
  * @example
  *

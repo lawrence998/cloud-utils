@@ -1,7 +1,7 @@
 /**
  * 深层克隆对象
  *
- * @param obj
+ * @param {*} obj
  * @returns {*}
  * @example
  *

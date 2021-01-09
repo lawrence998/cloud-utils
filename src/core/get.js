@@ -2,8 +2,8 @@
  * 从对象中检索给定选择器指示的一组属性
  *
  * {@link https://30secondsofcode.org/object#get}
- * @param from
- * @param selectors
+ * @param {object} from
+ * @param {*} selectors
  * @returns {string[]}
  * @example
  *

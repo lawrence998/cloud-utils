@@ -2,7 +2,7 @@
  * 测试函数所花费的时间
  *
  * @since 1.2.1
- * @param callback
+ * @param {function} callback 目标执行函数
  * @returns {*}
  * @example
  *

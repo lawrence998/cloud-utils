@@ -1,7 +1,7 @@
 /**
  * 是否为空对象
  *
- * @param val
+ * @param {*} val
  * @returns {boolean}
  * @example
  *

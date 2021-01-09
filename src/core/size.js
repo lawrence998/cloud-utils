@@ -6,8 +6,8 @@
 
  通过 split('') 将字符串拆分成字符数组并返回其长度。
 
- * @param val
- * @returns {*}
+ * @param {array | object | string} val 目标
+ * @returns {number} 长度
  * @example
  *
  * size([1, 2, 3, 4, 5]);

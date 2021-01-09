@@ -2,9 +2,9 @@
  * 返回指定长度的天数集合
  * 摘自：https://segmentfault.com/a/1190000013041329
  *
- * @param  {time} 时间
- * @param  {len} 长度
- * @param  {direction} 方向：  1: 前几天;  2: 后几天;  3:前后几天  默认 3
+ * @param  {date} time 时间
+ * @param  {number} len 长度
+ * @param  {number} direction 方向：  1: 前几天;  2: 后几天;  3:前后几天  默认 3
  * @return {Array} 数组
  * @example
  *

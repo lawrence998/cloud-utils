@@ -2,8 +2,8 @@
  * 数组转换为键值对的对象
  *
  * @since 1.2.1
- * @param array
- * @returns {*}
+ * @param array 目标数组
+ * @returns {object}
  * @example
  *
  * objectFromPairs([['a',1],['b',2]]);

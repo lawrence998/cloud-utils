@@ -2,7 +2,7 @@
  * 反转对象的键值对
  * 而不会改变它。使用 Object.keys() 和 Array.reduce() 来反转对象的键值对。
  *
- * @param obj
+ * @param {object} obj 目标对象
  * @returns {{}}
  * @example
  *

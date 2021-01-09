@@ -2,8 +2,8 @@
  * 版本比较
  *
  * {@link https://github.com/omichelsen/compare-versions}
- * @param v1 老版本
- * @param v2 新版本
+ * @param {string | number} v1 老版本
+ * @param {string | number} v2 新版本
  * @returns {number} v1 > v2 => 1, v1 < v2 => -1, v1 === v2 => 0
  * @example
  *

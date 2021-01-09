@@ -2,8 +2,8 @@
  * 基于给定的键返回嵌套JSON对象中的目标值
  *
  * {@link https://30secondsofcode.org/object#dig}
- * @param obj
- * @param target
+ * @param {object} obj
+ * @param {*} target
  * @returns {any}
  * @example
  *

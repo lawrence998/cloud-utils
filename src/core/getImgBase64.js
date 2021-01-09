@@ -8,7 +8,7 @@ function getImgBase64(url) {
   let dataURL = '';
   Img.setAttribute('crossOrigin', 'anonymous');
   Img.src = url;
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     Img.onload = function () {
       var canvas = document.createElement('canvas'),
         width = Img.width,

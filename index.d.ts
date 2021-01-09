@@ -1348,10 +1348,10 @@ export declare function toZhCN(num: string): string;
  * @returns {*}
  * @example
  *
- * trim(' 123 ');
+ * trimAll(' 123 ');
  * // => 123
  */
-export declare function trim(str: string, type: number): string;
+export declare function trimAll(str: string, type: number): string;
 
 /**
  * Creates a new URL by combining the specified URLs

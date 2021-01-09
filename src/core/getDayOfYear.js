@@ -2,7 +2,7 @@
  * 获取某个日期是当年中的第几天
  *
  * @since 1.2.4
- * @param time
+ * @param {*} time
  * @returns {number}
  * @example
  *

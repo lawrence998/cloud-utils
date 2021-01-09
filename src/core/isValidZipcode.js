@@ -1,7 +1,7 @@
 /**
  * 是否为有效的中国邮政编码
  *
- * @param val
+ * @param {string | number} val 
  * @returns {boolean}
  * @example
  *

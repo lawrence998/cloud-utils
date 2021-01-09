@@ -78,7 +78,7 @@ export {default as mapValues} from './core/mapValues';
 export {default as mapKeys} from './core/mapKeys';
 export {default as invertKeyValues} from './core/invertKeyValues';
 export {default as size} from './core/size';
-export {default as trim} from './core/trim';
+export {default as trimAll} from './core/trimAll';
 export {default as toZhCN} from './core/toZhCN';
 export {default as deepClone} from './core/deepClone';
 export {default as deepMapKeys} from './core/deepMapKeys';

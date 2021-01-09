@@ -2,7 +2,7 @@
  * 数字转换成中文的大写数字
  *
  * @since 1.2.5
- * @param num
+ * @param {number} num 目标数组
  * @returns {string}
  * @example
  *

@@ -8,8 +8,8 @@
  props.user.posts[0].comments[0]
  代码看起来相当不美观，因此提供了一个非常简洁明了的原生的方式。
  *
- * @param p 属性列表
- * @param o 对象
+ * @param {array} p 属性列表
+ * @param {object} o 对象
  * @returns {*} 如果正常访问到，则返回对应的值，否则返回 null。
  * @example
  *

@@ -3,7 +3,7 @@ import getDayOfYear from './getDayOfYear';
  * 获取某个日期在这一年的第几周
  *
  * @since 1.2.4
- * @param time
+ * @param {*} time
  * @returns {number}
  * @example
  *

@@ -4,8 +4,8 @@ import hasClass from './hasClass';
  * dom操作，元素添加某个class
  *
  * @since 1.1.5
- * @param el HTML元素
- * @param cls css类名
+ * @param {element} el HTML元素
+ * @param {string} cls css类名
  * @example
  *
  * <div class="box flex"></div>

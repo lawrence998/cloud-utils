@@ -2,10 +2,10 @@
  * 返回指定长度的月份集合
  * 摘自：https://segmentfault.com/a/1190000013041329
  *
- * @param  {time} 时间
- * @param  {len} 长度
- * @param  {direction} 方向：  1: 前几个月;  2: 后几个月;  3:前后几个月  默认 3
- * @return {Array} 数组
+ * @param  {date} time 时间
+ * @param  {number} len 长度
+ * @param  {number} direction 方向：  1: 前几个月;  2: 后几个月;  3:前后几个月  默认 3
+ * @return {array} 数组
  * @example
  *
  * getMonths('2018-1-29', 6, 1)

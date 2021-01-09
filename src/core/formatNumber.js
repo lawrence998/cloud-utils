@@ -2,11 +2,11 @@
  * 格式化数字、金额、千分位、保留几位小数、舍入舍去
  *
  * @since 1.0.7
- * @param number 要格式化的数字
- * @param decimals 保留几位小数
- * @param decPoint 小数点符号
- * @param thousandsSep 千分位符号
- * @param roundTag 舍入参数，默认 'ceil' 向上取,'floor'向下取,'round' 四舍五入
+ * @param {number} number 要格式化的数字
+ * @param {number} decimals 保留几位小数
+ * @param {string} decPoint 小数点符号
+ * @param {string} thousandsSep 千分位符号
+ * @param {string} roundTag 舍入参数，默认 'ceil' 向上取,'floor'向下取,'round' 四舍五入
  * @returns {XML|void|*|string}
  * @example
  *

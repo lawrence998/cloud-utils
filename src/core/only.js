@@ -2,9 +2,9 @@
  * 返回对象的白名单属性
  *
  * {@link https://github.com/tj/node-only}
- * @param obj
- * @param keys
- * @returns {*}
+ * @param {object} obj 目标对象
+ * @param {string} keys 白名单属性
+ * @returns {object}
  * @example
  *
  * var obj = {
